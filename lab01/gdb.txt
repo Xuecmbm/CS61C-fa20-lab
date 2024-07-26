@@ -1,9 +1,14 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1.run arg1 arg2
+2.break [file:]line
+  b [file:]line
+  break [file:]func
+  break +offset
+  break -offset
+  break *addr
+3.n 
+4.s
+5.c
+6.print variable 或 p variable
+7.display variable
+8.info locals
+9.quit
