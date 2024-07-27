@@ -15,7 +15,7 @@ endif
 BIT_OPS_OBJS = bit_ops.o test_bit_ops.o
 BIT_OPS_PROG = bit_ops
 
-LFSR_OBJS = lfsr.o test_lfsr.o
+LFSR_OBJS = lfsr.o test_lfsr.o bit_ops.o
 LFSR_PROG = lfsr
 
 VECTOR_OBJS=vector.o vector-test.o
@@ -30,6 +30,9 @@ $(BIT_OPS_PROG): $(BIT_OPS_OBJS)
 
 $(LFSR_PROG): $(LFSR_OBJS)
 	$(CC) $(CFLAGS) -g -o $(LFSR_PROG) $(LFSR_OBJS) $(LDFLAGS)
+
+$(VECTOR_PROG): $(VECTOR_OBJS)
+	$(CC) $(CFLAGS) -g -o $(VECTOR_PROG) $(VECTOR_OBJS) $(LDFLAGS)
 
 lfsr.c: lfsr.h
 test_lfsr.c: lfsr.h

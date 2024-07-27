@@ -1,3 +1,11 @@
+/*
+ * @Author: Xuecmbm 1124653720@qq.com
+ * @Date: 2024-07-25 16:38:57
+ * @LastEditors: Xuecmbm 1124653720@qq.com
+ * @LastEditTime: 2024-07-27 13:35:25
+ * @FilePath: \CS61C\CS61C-fa20-lab\lab02\vector.h
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 #ifndef CS61C_VECTOR_H_
 #define CS61C_VECTOR_H_
 /* vector.h originally written by Jeremy Huddleston <jeremyhu@eecs.berkeley.edu> Sp2004
@@ -45,11 +53,12 @@ vector_t *vector_new();
 
 /* Free up the memory allocated for the passed vector */
 /* YOUR CODE HERE */
+void vector_delete(vector_t *v);
 
 /* Return the value in the vector */
 int vector_get(vector_t *v, size_t loc);
 
 /* Set a value in the vector */
-/* YOUR CODE HERE */
+void vector_set(vector_t *v, size_t loc, int value);
 
 #endif
