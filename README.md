@@ -37,5 +37,5 @@ CS61C 是一门计算机体系结构课程，旨在深入探讨计算机硬件�
 ## 参考资料
 
 - [CS 自学指南](https://csdiy.wiki/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/CS61C/)
-
+- [课程资源来自](https://www.learncs.site/docs/curriculum-resource/cs61c/syllabus)
 
